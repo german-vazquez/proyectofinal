@@ -1,0 +1,584 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    font-size: 58px;
+    margin: 20px 0px;
+}
+h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px;
+    margin-bottom: 36px;
+}
+h3{
+    font-size: 15px;
+    margin: 0px
+}
+p{  
+    color:#B3B2B7;
+    font-size: 15px;
+    line-height: 25px;
+    margin: 0;
+    margin-bottom: 34px;
+    text-align: center;
+}
+body{
+    background-image: url(./img/fondo-espaciado.png);
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y:scroll;
+    padding: 0;
+}
+.contenedor{
+    margin: auto;
+    max-width: 1110px;
+    min-width: 375px;
+}
+button{
+    background-color: rgb(242, 95, 58);
+    border-radius: 22px;
+    box-shadow: 0px 4px 8px rgba(242, 97, 59, 0.5);
+    border: 0;
+    color: white;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 13.18px;
+    height: 44px;
+    width: 134px;
+}
+button:hover{
+    background-color: rgb(240, 116, 85);
+    cursor: pointer;
+}
+#chau{
+    display: none;
+}
+.sombra{
+    border-radius:18px;
+    box-shadow: 0 8px 20px  rgba(20, 20, 20, 0.05);
+    margin: 7px 7px;
+}
+
+/*header*/
+#logo {
+    margin:0;
+}
+
+header nav{
+    display: none;
+}
+
+header .contenedor{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 50px 25px;
+    align-items: center;
+}
+
+/* portada */
+#portada p{
+    font-size: 18px;
+    line-height: 32px;
+}
+#portada .contenedor{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+#portada .imgContenedorS{
+    text-align: center;
+}
+#portada h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+#portada .texto{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#portada .imgContenedorL{
+    align-items: center;
+    display: none;
+}
+
+/* caracteristicas */
+#caracteristicas .contenedor{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#caracteristicas h2{
+    margin-top: 100px;
+    text-align: center;
+}
+#caracteristicas .items{
+    padding-left: 50px;
+}
+.presentacion p{
+    margin-bottom: 50px;
+    text-align: center;
+}
+.items p{
+    left: -20px;
+    margin-right: 0px;
+    margin-top: 12px;
+    position: relative;
+    text-align: left;
+}
+.tituloItems{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(255, 239, 234);
+}
+.vineta{
+    align-items: center;
+    background-color: rgb(242, 95, 58);
+    border-radius: 22px;
+    border: 0;
+    color: white;
+    display: flex;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+    height: 43px;
+    justify-content: center;
+    left: -20px;
+    position: relative;
+    width: 69px;
+}
+
+/*testimonios */
+#testimonios{
+    padding: 10px;
+}
+#testimonios h2{
+    margin-top: 60px;
+    text-align: center;
+}
+#testimonios >.contenedor{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#tarjetero{
+    box-sizing: border-box;
+    margin: auto;
+    width: 338px;
+}
+
+#tarjetero > ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#tarjetero > ul.slider{
+    height: 300px;
+    position: relative;
+}
+
+#tarjetero > ul.slider li {
+    background:#fff;
+    height: inherit;
+    left: 0px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    transition: opacity .5s;
+    width: inherit;
+}
+
+#tarjetero > ul.slider li img{
+    object-fit: cover;
+}
+
+#tarjetero > ul.slider li:first-child {
+    opacity: 1; 
+}
+
+#tarjetero > ul.slider li:target {
+    opacity: 1; 
+}
+
+#tarjetero > .menu{
+    margin: 20px;
+    text-align: center;
+}
+
+#tarjetero > .menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+#tarjetero > .menu li a{
+    background-color: rgb(242, 95, 58);
+    border-radius: 100%;
+    color: white;
+    display: inline-block;
+    font-size: 5px;
+    height: 5px;
+    text-decoration: none;
+    padding: 1px;
+    width: 5px;
+}
+
+.cartero{
+    display: none;
+}
+/* invitacion */
+
+#invitacion .contenedor{
+    align-items: center;
+    background-color: rgb(242, 95, 58);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 100px 20px;
+    text-align: center;
+}
+#invitacion h2{
+    font-size: 36px;
+}
+#invitacion button{
+    background-color: white;
+    color: rgb(242, 95, 58);
+    font-weight: bold;
+}
+
+#invitacion button:hover{
+    background-color: rgb(255, 229, 223);
+}
+
+/* footer */
+footer{
+    background-color: #1E1E26 ;
+    width: 100%;
+}
+footer .contenedor{
+    align-items: center;    
+    display: flex;
+    flex-direction: column;
+}
+
+.footerMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    order: 1;
+    padding: 20px 0px;
+    width: 70vw;
+}
+footer .menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerMenu a{
+    color: white;
+    font-size: 14px;
+    margin: 8px 25px;
+    text-decoration: none;
+}
+
+.logoSocial{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    order: 2;
+}
+.socialMenu{
+    margin-top:  20px; ;
+}
+.socialMenu nav{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+}
+
+footer .logo{
+    background-image: url(./img/logo-grande-os.png);
+    background-size:contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 26.18px;
+    margin: 50px;
+    order: 3;
+    width: 145.43px;
+}
+i{
+    color: white;
+    font-size: 25px;
+    margin: 0%;
+}
+i:hover{
+    color:rgb(242, 95, 58);
+}
+
+.formMail{
+    order: 0;
+}
+.casilla{
+    border: 0;
+    border-radius: 22px;
+    color: #A0A0A0;
+    font-size: 13px;
+    height: 44px;
+    margin: 25px 4px;
+    padding-left: 15px;
+    width: 201px;
+}
+.go{
+    color: white;
+    background-color: rgb(242, 95, 58);
+    border: 0;
+    border-radius: 22px;
+    height: 42px;
+    width: 63px;
+}
+.go:hover{
+    background-color: rgb(233, 126, 99);
+    cursor: pointer;
+}
+.copy{
+    order: 3;
+    padding-bottom: 20px;
+}
+.copy p{
+    color: #8C8C94;
+    font-size: 12px;
+}
+
+@media (min-width:700px){
+    header .contenedor{
+        align-items: center;
+        display: flex;
+        height: 174px;
+        justify-content: space-between;
+    }
+    
+    header nav{
+        display: flex;
+        max-width: 400px;
+        width: 50vw;
+    }
+    
+    header a{
+        color: black;
+        font-size: 13px;
+        margin: auto;
+        text-decoration: none;
+    }
+    
+    header a:hover{
+        color: rgb(242, 95, 58);
+    }
+    #chau{
+        display: block;
+    }
+    #hamburger{
+        display: none;
+    }
+    #portada .contenedor{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 25px;
+    }
+    #portada .texto{
+        align-items: flex-start;
+        width: 35vw;
+    }
+    #portada h1{
+        text-align: left;
+    }
+    #portada p{
+        text-align: left;
+    }
+    #portada .imgContenedorS{
+        display: none;
+    }
+    #portada .imgContenedorL{
+        display:flex;
+        flex-direction: column;
+        width: 40vw;
+    }
+    
+    .imgContenedorL img{
+        margin: 10px;
+        max-width: 220px;
+        width: 20vw;
+    }
+
+    .linea1{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    #caracteristicas .contenedor{
+        align-items: flex-start;
+        display: flex;
+        flex-direction: row;
+        max-height: 692px;
+        min-height: 492px;
+        padding: 25px;
+    }
+    #caracteristicas .presentacion{
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+    }
+    #caracteristicas .presentacion h2{
+        margin-left: 0px;
+        margin-top: 0px;
+        text-align: left;
+    }
+    
+    .presentacion p{
+        text-align: left;
+        width: 60%;
+    }
+    
+    .items{
+        padding-right: 24px;
+        width: 50vw;
+    }
+    .tituloItems{
+        align-items: center;
+        display: flex;
+    }
+    
+    #caracteristicas h3{
+        margin-left: 10px;
+    }
+    
+    .items p{
+        color:#B3B2B7;
+    }
+
+    #testimonios .contenedor{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        max-width: 1300px;
+        padding-bottom: 180px;
+    }
+    
+    #testimonios h2{
+        text-align: center;
+    }
+    
+    #testimonios p{
+        color:#B3B2B7;
+    }
+    
+    .cartero{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 70px 0px 45px;
+    }
+    
+    .carta {
+        background-color: #FAFAFA;
+        margin: 0px 10px;
+        padding: 0px 28px 30px;
+        text-align: center;
+        width: 33.3%;
+    }
+    
+    .carta img{
+        position: relative;
+        top: -50px;
+    }
+
+    #tarjetero{
+        display: none;
+    }
+        
+    #invitacion{
+        background-color: rgb(242, 95, 58);
+    }
+    
+    #invitacion .contenedor{
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    #invitacion h2{
+        color: white;
+        font-size: 40px;
+        margin: 64px 0px;
+        text-align: left;
+    }
+    
+    #invitacion button{
+        background-color: white;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25) ;
+        color: rgb(242, 95, 58);
+    }
+    
+
+
+    footer .contenedor{
+        align-items:flex-start;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 50px;
+    }
+    
+    .logoSocial{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        order: 0;
+        width: 18%;
+    }
+    footer .logo{
+        margin-top: 0px;
+    }
+    .socialMenu nav{
+        min-width: 170px;
+        width: 100%;
+    }
+    .logoSocial .socialMenu{
+        order: 1;
+    }
+    .logoSocial .logo{
+        order: 0;
+    }
+    .footerMenu{
+        min-width: 260px;
+        order: 1;
+        padding: 0%;
+        width: 25%;
+    }
+
+    .formMail{
+        display: flex;
+        justify-content: flex-end;
+        min-width: 277px;
+        order: 2;
+        width: 25%;
+    }
+    footer .casilla{
+        margin: 0px 4px;
+    }
+    
+    footer .copy{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: auto;
+        max-width: 1110px;
+    }
+}
